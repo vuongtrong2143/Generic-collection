@@ -1,3 +1,15 @@
-bin/
-obj/
+# 1. Chặn tất cả các file và thư mục trong project
+*
+
+# 2. Không chặn các thư mục (để Git có thể đi sâu vào các thư mục con tìm file)
+!*/
+
+# 3. Chỉ cho phép (whitelist) các định dạng file bạn muốn giữ lại
+!*.sln
+!*.csproj
+!*.cs
+
+# 4. Chặn dứt điểm các thư mục build (giữ nguyên như file cũ của bạn) để tránh việc Git nhận nhầm các file .cs được sinh ra tự động trong quá trình biên dịch 
+bin/ 
+obj/ 
 .vs/
