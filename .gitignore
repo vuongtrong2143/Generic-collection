@@ -3,6 +3,7 @@
 !*.sln
 !*.csproj
 !*.cs
+!*.png
 bin/
 obj/
 .vs/
